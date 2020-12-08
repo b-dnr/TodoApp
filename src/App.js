@@ -48,7 +48,7 @@ function App() {
   return (
     <Context.Provider value={{removeTodo}}>
       <div className="wrapper" >
-        <h1>React Tutorial</h1>
+        <h1 style={{textAlign: 'center'}}>My Todos!</h1>
         <Modal/>
         <React.Suspense fallback={<p>Loading...</p>}>
           <AddTodo onCreate={addTodo}/>
